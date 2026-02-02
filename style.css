@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+nav {
+  background-color: ;
+}
+
+#topNav{
+  background-color: rgb(255, 255, 255);
+}
+
+#bottomNav{
+  background-color: hsl(260, 8%, 14%);
+}
+
+.container {
+  background-color: hsl(257, 27%, 26%);
+  padding: 5px;
+  border: 2px solid black;
+  width: 600px;
+}
+
+main {
+  background-color:hsl(257, 7%, 63%);
+}
+
+.infoStats {
+  background-color: white;
+  width: 300px;
+}
+
+/* .tl_image {
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 50px;
+  width: 46px 46px;
+} */
+
+#getStarted{
+  background-color: hsl(257, 27%, 26%);
+}
+
+button{
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  border-style:none;
+}
+
+ul{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+} */
