@@ -7,15 +7,53 @@
 
 body {
   background-color: rgb(255, 255, 255);
+  color: hsl(260, 8%, 14%);
 }
 
-nav {
+/* nav {
   background-color: ;
-}
+} */
 
 #topNav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: rgb(255, 255, 255);
+  color: hsl(260, 8%, 14%);
 }
+
+#topNav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#topNav li {
+  padding: 5px 10px;
+}
+
+#topNav a {
+  color: hsl(260, 8%, 14%);
+}
+
+#topNav p {
+  padding: 5px 10px;
+}
+
+#topNav .logoText {
+  font-size: larger;
+  font-weight: bold;
+}
+
+#topNav #upNavLeft {
+  display: flex;
+  justify-items: left;
+}
+
+#topNav #upNavRight {
+  display: flex;
+  justify-content: flex-end;
+}
+
 
 #bottomNav{
   background-color: hsl(260, 8%, 14%);
@@ -30,10 +68,12 @@ nav {
 
 main {
   background-color:hsl(257, 7%, 63%);
+  color: hsl(260, 8%, 14%);
 }
 
 .infoStats {
   background-color: white;
+  color: hsl(260, 8%, 14%);
   width: 300px;
 }
 
@@ -45,6 +85,7 @@ main {
 
 #getStarted{
   background-color: hsl(257, 27%, 26%);
+  color: white;
 }
 
 button{
