@@ -8,6 +8,8 @@
 body {
   background-color: rgb(255, 255, 255);
   color: hsl(260, 8%, 14%);
+  /* display: flex;
+  /* flex-direction: column; */ /*Didn't work */
 }
 
 /* nav {
@@ -35,6 +37,14 @@ button{
   border-style:none;
 }
 
+button:hover{
+  background-color: rgb(255, 217, 0);
+}
+
+h1, h2, h3 {
+  border: 2px solid black;
+  margin: 25px 0 10px 0px; /* Top: px, Right: px, Bottom: px, Left: px */
+}
 /* Specific Parts of HTML edits */
 
 #topNav{
@@ -91,12 +101,28 @@ button{
 .hero #heroInfo{
   padding: auto;
 }
+
+#space {
+  display: flex;
+  justify-content: center;
+  border: 5px solid rgb(226, 0, 0);
+  position:absolute;
+  width:100%;
+  bottom: 50%;
+}
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position:absolute;
+  top: 35%; */
+  /* bottom: 50%; */
   background-color: hsl(257, 27%, 26%);
   padding: 10px;
   border: 2px solid black;
   width: 600px;
   border-radius: 10px;
+  /* background-image: url(images/); */
 }
 
 input {
@@ -113,11 +139,16 @@ main {
   padding: 0 50px;
 }
 
-.gridContainer{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+#gridContainer{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* display:grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  */
   gap: 20px;
 }
+
 .infoStats {
   background-color: white;
   color: hsl(260, 8%, 14%);
@@ -129,14 +160,19 @@ main {
 
 
 .tl_image {
+  position: absolute;
   background-color: hsl(257, 27%, 26%);
   border-radius: 100px;
-  size: 20px;
+  size: 40px 40px;
 }
 
 #getStarted{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: hsl(257, 27%, 26%);
   color: white;
+  height: 200px;
 }
 
 
@@ -193,3 +229,5 @@ button #shortenItBtn {
   font-weight: 700;
   font-style: italic;
 } */
+
+/* Make media query for smaller screens 
