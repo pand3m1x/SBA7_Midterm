@@ -14,12 +14,36 @@ body {
   background-color: ;
 } */
 
+.logoText {
+  font-size: larger;
+  font-weight: bold;
+}
+
+ul{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+button{
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  border-style:none;
+}
+
+/* Specific Parts of HTML edits */
+
 #topNav{
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: rgb(255, 255, 255);
   color: hsl(260, 8%, 14%);
+  padding: 0 20px;
 }
 
 #topNav ul {
@@ -35,13 +59,12 @@ body {
   color: hsl(260, 8%, 14%);
 }
 
-#topNav p {
-  padding: 5px 10px;
+#topNav a:hover{
+  color: rgb(255, 217, 0);
 }
 
-#topNav .logoText {
-  font-size: larger;
-  font-weight: bold;
+#topNav p {
+  padding: 5px 10px;
 }
 
 #topNav #upNavLeft {
@@ -59,52 +82,94 @@ body {
   background-color: hsl(260, 8%, 14%);
 }
 
+.hero {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+
+.hero #heroInfo{
+  padding: auto;
+}
 .container {
   background-color: hsl(257, 27%, 26%);
-  padding: 5px;
+  padding: 10px;
   border: 2px solid black;
   width: 600px;
+  border-radius: 10px;
+}
+
+input {
+  width: 400px;
+  padding: 0 10px;
+  margin: 5px 5px 15px 0px;
 }
 
 main {
-  background-color:hsl(257, 7%, 63%);
+  display: flex;
+  /* flex-direction: column; */
+  background-color: hsla(258, 7%, 63%, 0.334);
   color: hsl(260, 8%, 14%);
+  padding: 0 50px;
 }
 
+.gridContainer{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
 .infoStats {
   background-color: white;
   color: hsl(260, 8%, 14%);
   width: 300px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
 }
 
-/* .tl_image {
+
+.tl_image {
   background-color: hsl(257, 27%, 26%);
-  border-radius: 50px;
-  width: 46px 46px;
-} */
+  border-radius: 100px;
+  size: 20px;
+}
 
 #getStarted{
   background-color: hsl(257, 27%, 26%);
   color: white;
 }
 
-button{
-  background-color: hsl(180, 66%, 49%);
+
+button #shortenItBtn {
+  border-radius: 10px;
+}
+
+
+#getStarted {
+  justify-content: center;
+  padding: 0 50px;
+}
+
+
+#bottomNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15 20px;
+  height: 80%;
+}
+
+#bottomNav a {
   color: white;
-  padding: 10px 15px;
-  margin: 5px;
-  border-radius: 20px;
-  border-style:none;
 }
 
-ul{
-  list-style: none;
+#bottomNav a:hover {
+  color: hsl(180, 66%, 49%);
 }
 
-a {
-  text-decoration: none;
-}
-
+/* #bottomNav .notHeader {
+  font-size: 1rem;
+} */
 /* .poppins-medium {
   font-family: "Poppins", sans-serif;
   font-weight: 500;

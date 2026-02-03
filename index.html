@@ -35,11 +35,11 @@
       <div id="upNavRight">
         <ul>
           <a href=""><li>Login</li></a>
-          <a href=""><li>Sign Up</li></a>
+          <a href=""><li style="background-color: hsl(180, 66%, 49%); border-radius: 20px;">Sign Up</li></a>
         </ul>
       </div>
     </nav>
-    <hero>
+    <section class="hero">
       <div id="heroInfo">
         <h1>More than bite sized links</h1>
 
@@ -51,43 +51,44 @@
       <div id="bodyImage">
         <img src="./images/shortStack_pancakes.svg" alt="Image of blueberry pancake stack, with abstract shapes behind it." style="width:500px;height:350px;">
       </div>
-    </hero>  
+    </section>  
   </header>
   <div class="container" id="urlSection">
-    <h2>Shorten a link here...</h2>
-    <input type="text" id="url" placeholder="paste URL here" required>
+    <input type="text" id="url" placeholder="Shorten a link here..." required>
 
     <button id="shortenItBtn">Shorten It!</button>
   </div>
   <main>
     <div id="adInfo">
-      <h3>Advanced Statistics</h3>
+      <h2>Advanced Statistics</h2>
 
       <p>Track how your links are performing across the web with our 
       advanced statistics dashboard.</p>
     </div>
-    <div class="infoStats">
-      <div class="tl_image"><img src="./images/icon-brand-recognition.svg" alt="simplified icon of graph.">
+    <div id="gridContainer">
+      <div class="infoStats">
+        <div class="tl_image"><img src="./images/icon-brand-recognition.svg" alt="simplified icon of graph.">
+        </div>
+        <h3 class="infograph">Brand Recognition</h3>
+
+        <p>Boost your brand recognition with each click. Generic links don’t 
+        mean a thing. Branded links help instil confidence in your content.</p>
       </div>
-      <h4 class="infograph">Brand Recognition</h4>
+      <div class="infoStats">
+        <div class="tl_image"> <img src="./images/icon-detailed-records.svg" alt="simplified icon of record keeping">
+        </div>
+        <h3 class="infograph">Detailed Records</h3>
 
-      <p>Boost your brand recognition with each click. Generic links don’t 
-      mean a thing. Branded links help instil confidence in your content.</p>
-    </div>
-    <div class="infoStats">
-      <div class="tl_image"> <img src="./images/icon-detailed-records.svg" alt="simplified icon of record keeping">
+        <p>Gain insights into who is clicking your links. Knowing when and where 
+        people engage with your content helps inform better decisions.</p>
       </div>
-      <h4 class="infograph">Detailed Records</h4>
+      <div class="infoStats">
+        <div class="tl_image"><img src="./images/icon-fully-customizable.svg" alt="simplified icon of art supplies">
+        <h3 class="infograph">Fully Customizable</h3>
 
-      <p>Gain insights into who is clicking your links. Knowing when and where 
-      people engage with your content helps inform better decisions.</p>
-    </div>
-    <div class="infoStats">
-      <div class="tl_image"><img src="./images/icon-fully-customizable.svg" alt="simplified icon of art supplies">
-      <h4 class="infograph">Fully Customizable</h4>
-
-      <p>Improve brand awareness and content discoverability through customizable 
-      links, supercharging audience engagement.</p>
+        <p>Improve brand awareness and content discoverability through customizable 
+        links, supercharging audience engagement.</p>
+      </div>
     </div>
   </main>
 
@@ -105,28 +106,28 @@
         <ul>
           <a href=""><li><h5>Features</h5></li></a>
 
-          <a href=""><li>Link Shortening</li></a>
-          <a href=""><li>Branded Links</li></a>
-          <a href=""><li>Analytics</li></a>
+          <a href=""><li class="notHeader">Link Shortening</li></a>
+          <a href=""><li class="notHeader">Branded Links</li></a>
+          <a href=""><li class="notHeader">Analytics</li></a>
         </ul>
       </div>
       <div>
         <ul>
           <a href=""><li><h5>Resources</h5></li></a>
 
-          <a href=""><li>Blog</li></a>
-          <a href=""><li>Developers</li></a>
-          <a href=""><li>Support</li></a>
+          <a href=""><li class="notHeader">Blog</li></a>
+          <a href=""><li class="notHeader">Developers</li></a>
+          <a href=""><li class="notHeader">Support</li></a>
         </ul>
       </div>
       <div>
         <ul>
           <a href=""><li><h5>Company</h5></li></a>
 
-          <a href=""><li>About</li></a>
-          <a href=""><li>Our Team</li></a>
-          <a href=""><li>Careers</li></a>
-          <a href=""><li>Contact</li></a>
+          <a href=""><li class="notHeader">About</li></a>
+          <a href=""><li class="notHeader">Our Team</li></a>
+          <a href=""><li class="notHeader">Careers</li></a>
+          <a href=""><li class="notHeader">Contact</li></a>
         </ul>
       </div>
       <div id="socialMediaBar">
