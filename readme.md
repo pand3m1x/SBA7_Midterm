@@ -21,6 +21,7 @@ Reflection: []
 Setting up document structure:
 
 Design challenge:
+https://css-tricks.com/a-quick-way-to-remember-difference-between-justify-content-align-items/
 
 API fetch challenge:
 

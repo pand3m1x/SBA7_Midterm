@@ -104,11 +104,13 @@ h1, h2, h3 {
 
 #space {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   border: 5px solid rgb(226, 0, 0);
   position:absolute;
   width:100%;
-  bottom: 50%;
+  margin: 40px 0;
+  /* bottom: 50%; */
 }
 .container {
   display: flex;
@@ -125,6 +127,21 @@ h1, h2, h3 {
   /* background-image: url(images/); */
 }
 
+#shortenedLinks {
+  width: 600px;
+  margin-top: 20px;
+}
+
+#shortenedLinks li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  margin: 25px;
+  border-radius: 10px;
+}
+
 input {
   width: 400px;
   padding: 0 10px;
@@ -133,10 +150,19 @@ input {
 
 main {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
+  align-items: center;
   background-color: hsla(258, 7%, 63%, 0.334);
   color: hsl(260, 8%, 14%);
-  padding: 0 50px;
+  padding: 50px 50px;
+}
+
+#adInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 400px;
 }
 
 #gridContainer{
