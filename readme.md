@@ -28,6 +28,7 @@ What is jetpack?
 https://css-tricks.com/a-quick-way-to-remember-difference-between-justify-content-align-items/
 https://www.samanthaming.com/flexbox30/14-space-around-vs-space-evenly/
 https://medium.com/@dhivyakgf/spacebetween-vs-spacearound-vs-spaceevenly-jetpack-compose-arrangements-visually-explained-9cba425292e0
+https://dev.to/darkmavis1980/the-navigator-clipboard-api-in-javascript-38gn
 
 API fetch challenge:
 

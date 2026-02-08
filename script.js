@@ -63,10 +63,12 @@ li.appendChild(a)
   const copyBtn = document.createElement("button");
   copyBtn.innerText ="Copy";
 
-  copyBtn.addEventListener("click", function(){
-    const copyText = target.nextElementSibling;
-    copyLink(index);
-  })
+  copyBtn.addEventListener("click", () => {
+    const copyLink = a.innerText;
+    navigator.clipboard.writeText(copyLink)
+    alert("Copied the text: " + copyLink);
+    console.log("link copied")
+  });
 
   li.appendChild(copyBtn)
 
