@@ -17,12 +17,14 @@ body {
 } */
 
 .logoText {
-  font-size: larger;
+  font-size: 1.5rem;
   font-weight: bold;
+  margin: 10px 10px; /*top/bottom left/right*/
 }
 
 ul{
   list-style: none;
+  margin: 10px 10px; /*top/bottom left/right*/
 }
 
 a {
@@ -96,9 +98,9 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0 50px;
+  padding: 20px 20px 30px 20px; /* Top: px, Right: px, Bottom: px, Left: px */
   max-width: 1000px;
-  align-items: center;
+  margin: auto;
 }
 
 #heroInfo{
@@ -110,7 +112,7 @@ h1 {
   font-size: 2rem;
 }
 
-#bodyimage{
+#bodyImage{
   width: 600px;
 }
 
@@ -128,6 +130,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items: space-between;
   /* position:absolute;
   top: 35%; */
   /* bottom: 50%; */
@@ -141,8 +144,8 @@ h1 {
 
 input {
   width: 400px;
-  padding: 0 10px;
-  margin: 5px 5px 15px 0px;
+  padding: 10px 10px;
+  margin: 10px 5px 10px 5px;  /* Top: px, Right: px, Bottom: px, Left: px */
   border-radius: 5px;
 }
 
@@ -199,25 +202,29 @@ main {
   background-color: white;
   color: hsl(260, 8%, 14%);
   width: 300px;
-  padding: 5px;
+  padding: 20px;
   margin: 5px;
   border-radius: 5px;
 }
 
 
-.tl_image {
+.tlImage {
   /* position: absolute; */
-  background-color: hsl(257, 27%, 26%);
-  border-radius: 100px;
-  width: 60px;
-  height: 60px;
-
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 100px;
+  width: 70px;
+  height: 70px;
   padding: 10px;
+  margin: -50px 0 2px 10px; /* Top: px, Right: px, Bottom: px, Left: px */
 }
 
+#customizePic, #graphPic, #recordPic {
+  width: 30px;
+  height: 30px;
+}
 #getStarted{
   display: flex;
   flex-direction: column;
