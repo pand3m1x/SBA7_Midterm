@@ -21,7 +21,13 @@ Reflection: []
 Setting up document structure:
 
 Design challenge:
+Remebering the order of which things to affect (is it the parent or child?)
+
+What is jetpack?
+
 https://css-tricks.com/a-quick-way-to-remember-difference-between-justify-content-align-items/
+https://www.samanthaming.com/flexbox30/14-space-around-vs-space-evenly/
+https://medium.com/@dhivyakgf/spacebetween-vs-spacearound-vs-spaceevenly-jetpack-compose-arrangements-visually-explained-9cba425292e0
 
 API fetch challenge:
 

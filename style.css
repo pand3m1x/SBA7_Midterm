@@ -94,22 +94,34 @@ h1, h2, h3 {
 
 .hero {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
   padding: 0 50px;
+  max-width: 1000px;
+  align-items: center;
 }
 
-.hero #heroInfo{
+#heroInfo{
   padding: auto;
+  width: 600px;
 }
 
-#space {
+h1 {
+  font-size: 2rem;
+}
+
+#bodyimage{
+  width: 600px;
+}
+
+#space { /*parent to .container*/
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 5px solid rgb(226, 0, 0);
-  position:absolute;
+  /* position:absolute; */
   width:100%;
-  margin: 40px 0;
+  margin: -85px 0 20px 0px; /* Top: px, Right: px, Bottom: px, Left: px */
   /* bottom: 50%; */
 }
 .container {
@@ -127,6 +139,13 @@ h1, h2, h3 {
   /* background-image: url(images/); */
 }
 
+input {
+  width: 400px;
+  padding: 0 10px;
+  margin: 5px 5px 15px 0px;
+  border-radius: 5px;
+}
+
 #links {
   width: 600px;
   margin-top: 20px;
@@ -142,10 +161,8 @@ h1, h2, h3 {
   border-radius: 10px;
 }
 
-input {
-  width: 400px;
-  padding: 0 10px;
-  margin: 5px 5px 15px 0px;
+#links a {
+  color: black;
 }
 
 main {
@@ -176,6 +193,9 @@ main {
 }
 
 .infoStats {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: white;
   color: hsl(260, 8%, 14%);
   width: 300px;
@@ -186,10 +206,16 @@ main {
 
 
 .tl_image {
-  position: absolute;
+  /* position: absolute; */
   background-color: hsl(257, 27%, 26%);
   border-radius: 100px;
-  size: 40px 40px;
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 #getStarted{
@@ -202,7 +228,7 @@ main {
 }
 
 
-button #shortenItBtn {
+#shortenItBtn {
   border-radius: 10px;
 }
 
