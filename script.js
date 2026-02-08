@@ -22,7 +22,7 @@ fetch('https://spoo.me/api/v1/shorten', {
 .then(data => console.log(data));
 
 const shortenItBtn = document.getElementById("shortenItBtn");
-const shortenedLinks = document.getElementById("shortenedLinks");
+const links = document.getElementById("links");
   
 shortenItBtn.addEventListener("click", shortenLink);
 
@@ -37,10 +37,10 @@ function shortenLink(){
   }
 
   if (urlInput) {
-    console.log(JSON.parse(localStorage.getItem("shortenedLinks")))
-    const linkShort = JSON.parse(localStorage.getItem("shortenedLinks")) || [];
+    console.log(JSON.parse(localStorage.getItem("links")))
+    const linkShort = JSON.parse(localStorage.getItem("links")) || [];
     linkShort.push({url:urlInput}) // new link
-    localStorage.setItem("shortenedLinks", JSON.stringify(linkShort))
+    localStorage.setItem("links", JSON.stringify(linkShort))
 
   renderLinks();
   console.log("Shortened!")
@@ -48,8 +48,8 @@ function shortenLink(){
 }
 
 function renderLinks() {
-  const linkShort = JSON.parse(localStorage.getItem("shortenedLinks")) || [];
-  shortenedLinks.innerHTML = "";
+  const linkShort = JSON.parse(localStorage.getItem("links")) || [];
+  links.innerHTML = "";
 
   linkShort.forEach((link,index) => {
     const li = document.createElement("li");
@@ -69,7 +69,7 @@ li.appendChild(a)
 
   li.appendChild(copyBtn)
 
-  shortenedLinks.append(li)
+  links.append(li)
 })
 }
 renderLinks();

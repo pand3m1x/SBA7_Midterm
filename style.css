@@ -127,12 +127,12 @@ h1, h2, h3 {
   /* background-image: url(images/); */
 }
 
-#shortenedLinks {
+#links {
   width: 600px;
   margin-top: 20px;
 }
 
-#shortenedLinks li {
+#links li {
   display: flex;
   justify-content: space-between;
   align-items: center;
