@@ -8,19 +8,20 @@ Ensure the repository is public and includes a detailed README.md file. (x)
 
 Live Demo: [x]  *ੈ✩‧₊˚  https://sba7midterm.netlify.app/   *ੈ✩‧₊˚
 
-Deploy your application using a platform like GitHub Pages, Netlify, or Vercel. ()
-Provide a link to the live demo in your README.md file.()
+Deploy your application using a platform like GitHub Pages, Netlify, or Vercel. (x)
+Provide a link to the live demo in your README.md file.(x)
 
 Reflection Document: [x]
 
-Write a 200-300 word reflection discussing your development process, challenges faced, solutions implemented, and potential improvements.
-Include this reflection in your GitHub repository.
+Write a 200-300 word reflection discussing your development process, challenges faced, solutions implemented, and potential improvements. (x)
+Include this reflection in your GitHub repository. (x)
 
 Reflection: [x]
 
 Setting up document structure:
 
 Design challenge:
+
     Remebering the order of which things to affect (is it the parent or child?).
     Still stumbling on distinguing between ID (#) and Class (.), and so, spent time 
     going 'why isn't this affecting _____?' , 'oh, that doens't work either', 
