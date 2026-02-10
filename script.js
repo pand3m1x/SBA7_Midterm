@@ -21,10 +21,9 @@ async function shortenLink(){
   if (urlInput === ""){
     alert ("please enter a url")
     return;
-    // how to check for legit URL?
   }
 
-  try { //lesson 8 mod 6 post request
+  try { 
   const response = await
   fetch ("https://spoo.me/api/v1/shorten", {
     method: 'POST',
@@ -77,6 +76,7 @@ function renderLinks() {
     a.href = link.short;
     a.innerText = link.short;
     a.target = "_blank";
+
 li.appendChild(a)
 
   const copyBtn = document.createElement("button");
@@ -85,6 +85,9 @@ li.appendChild(a)
   copyBtn.addEventListener("click", () => {
     const copyLink = a.innerText;
     navigator.clipboard.writeText(copyLink)
+    // if (copyBtn.innerText === "Copy") { // need to figure out how to change the innerText of button to say COPIED
+    //   copyBtn.innerText === "Copied";
+    // }
 
     alert("Copied the text: " + copyLink);
 
