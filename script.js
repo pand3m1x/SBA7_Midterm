@@ -1,8 +1,8 @@
-// Shorten any valid URL []
-// See a list of their shortened links, even after refreshing the browser []
-// Copy the shortened link to their clipboard in a single click []
-// Receive an error message when the form is submitted if: []
-// The input field is empty []
+// Shorten any valid URL [x]
+// See a list of their shortened links, even after refreshing the browser [x]
+// Copy the shortened link to their clipboard in a single click [x]
+// Receive an error message when the form is submitted if
+// The input field is empty [x]
 // View the optimal layout for the interface depending on their device’s screen size []
 // See hover and focus states for all interactive elements on the page []
 
@@ -42,19 +42,16 @@ async function shortenLink(){
 
   console.log("API fetch status:", data);
 
-  const shortUrl = data.short_URL || data.shortURL;
+  const shortUrl = data.short_url || data.shorturl;
 
-  const storedLinks = JSON.parse(localStorage.getItem("shortenedLinks")) || [];
+  const storedLinks = JSON.parse(localStorage.getItem("links")) || [];
 
   storedLinks.push({
     original:urlInput,
     short:shortUrl,
   })
 
-  localStorage.setItem(
-    "links",
-    JSON.stringify(storedLinks)
-  );
+  localStorage.setItem("links",JSON.stringify(storedLinks));
 
   renderLinks();
 
@@ -68,15 +65,18 @@ async function shortenLink(){
 // This is what adds li under the URL maker container, within the #space div ((Need to figure out how to add both original and shortened))
 function renderLinks() {
   const linkShort = JSON.parse(localStorage.getItem("links")) || [];
-  links.innerHTML = "";
+  links.innerText = "";
 
   linkShort.forEach((link,index) => {
     const li = document.createElement("li");
     li.dataset.index = index;
-    console.log(link)
+
+    console.log(link.short)
+
     const a = document.createElement("a");
     a.href = link.short;
     a.innerText = link.short;
+    a.target = "_blank";
 li.appendChild(a)
 
   const copyBtn = document.createElement("button");
@@ -85,7 +85,9 @@ li.appendChild(a)
   copyBtn.addEventListener("click", () => {
     const copyLink = a.innerText;
     navigator.clipboard.writeText(copyLink)
+
     alert("Copied the text: " + copyLink);
+
     console.log("link copied")
   });
 
